@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".paragraph").hide();
+            });
+        });
+
+        $('#header > ul >  li').removeClass('active');
+        $('#header > ul > li#list').addClass('active');
+
+        $(document).ready(function(){
+            $(".list li").click( function() {
+                $(".list li").css("color", "black");
+                $(this).css("color", "blue");
+            });
+
+        });
+
+        $(document).ready(function(){
+            $("h5").click( function() {
+                $("h5").css("color", "black");
+                $(".response").css("color", "blue");
+            });
+
+            $(document).ready(function(){
+                $("h2").click( function() {
+                    $("h2").css("color", "black");
+                    $("h2").css("color", "red");
+                });
+            });
+
+            $(document).ready(function(){
+                $("h3").click( function() {
+                    $("h3").css("color", "black");
+                    $("h3").css("color", "pink");
+                });
+            });
+        });
+
+
+
+
+    </script>
+</head>
+<body>
+
+<p class="p"><h2>Assignment 7</h2> </p>
+
+<p class="paragraph">I’ve always stated to others that Spelman College is not just the best school in the country for black women, it’s the best school in the country, PERIOD.  Unlike Harvard, Yale and all the other schools with multi-billion dollar endowments, I am hard pressed to think of any Spelman grad I know who isn’t a doctor, lawyer, professor, or successful professional in some other field.  Spelman College is nothing less than a factory of greatness, and the women who come out of this institution are typically second-to-none.</p>
+<p><h3>Top Spelman Moments</h3></p>
+<h5>Why is Spelman the greatest? [click here]</h5>
+<p class="response">Because it is!!</p>
+
+<div class="list">
+<ol>
+    <li> Graduating</li>
+    <li>Olive Branch</li>
+    <li>Market Fridays</li>
+    <li>Fried Chicken Wednesday</li>
+</ol>
+</div>
+
+
+<button>Hide Paragraphs</button>
+
+
+
+</body>
+</html>
